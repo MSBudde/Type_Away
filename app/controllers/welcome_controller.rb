@@ -3,6 +3,8 @@ class WelcomeController < ApplicationController
   end
 
   def home
+    @posts = Post.all
+    @newPost = Post.new
   end
 
   def profile
