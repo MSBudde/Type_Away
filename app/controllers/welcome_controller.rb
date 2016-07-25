@@ -4,9 +4,12 @@ class WelcomeController < ApplicationController
 
   def home
     @posts = Post.all
-    @newPost = Post.new
+    @post = Post.new
   end
 
   def profile
+  end
+
+  def oops
   end
 end
