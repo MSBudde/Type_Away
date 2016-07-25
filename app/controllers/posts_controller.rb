@@ -5,14 +5,16 @@ class PostsController < ApplicationController
     end
 
     def create
-      @post = User.first.posts.new(post_params)
+      @post = current_user.posts.new(post_params)
 
         if(@post.save)
-          redirect_to root_path
+          redirect_to '/welcome/profile'
         else
           render :new
         end
       end
+      def show
+        @posts = Post.all
     private
   def  post_params
     params.require(:post).permit(:user_id, :content, :title )
