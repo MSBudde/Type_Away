@@ -16,13 +16,24 @@
       <ul class="nav navbar-nav">
         <li class="active"><a href="/">Home<span class="sr-only">(current)</span></a></li>
         <li><a href="/welcome/home">Post</a></li>
+        <li><a href="/posts/myposts">My Posts</a></li>
+        <li><a href="/posts">Explore</a></li>
         <li class="dropdown">
         <form class="navbar-form navbar-left">
-        <div class="form-group">
+
       </form>
+      <li align="right">
+        <li class="round-image-50"><%= image_tag(current_user.avatar.url(:thumb)) %></li>
+      <% if user_signed_in? %>
+      <li>Logged in as <strong><%= current_user.username %></strong>.</li>
+        <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> |
+        <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
+      <% else %>
+        <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> |
+        <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
+      <% end %>
+    </li>
 
 
-
-    </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>

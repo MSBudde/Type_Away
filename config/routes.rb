@@ -6,9 +6,16 @@ Rails.application.routes.draw do
 
   get 'welcome/profile'
 
+  get 'posts/myposts' => 'posts#myposts'
+
   devise_for :users
-    resources :posts
-  
+  resources :posts do
+    resources :comments
+  end
+
+
+
+
 
 
   # The priority is based upon order of creation: first created -> highest priority.

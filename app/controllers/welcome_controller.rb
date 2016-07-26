@@ -11,5 +11,6 @@ class WelcomeController < ApplicationController
   end
 
   def oops
+      @post = current_user.posts
   end
 end
