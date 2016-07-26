@@ -1,0 +1,9 @@
+<%= form_for [@post,@comment] do |f| %>
+  <div class="field1">
+    <%= f.label :content %><br />
+    <%= f.text_field :content, autofocus: true %>
+  </div>
+  <div class="actions1">
+    <%= f.submit "Post" %>
+    </div>
+  <% end %>
