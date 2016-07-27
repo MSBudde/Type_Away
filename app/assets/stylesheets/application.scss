@@ -20,12 +20,12 @@
 @import url(https://fonts.googleapis.com/css?family=Cabin+Sketch);
 @import url(http://fonts.googleapis.com/css?family=Share+Tech+Mono);
 
-body, .forms1 {
+body, .forms {
   background-image: url(http://hilleltribe.com/wp-content/uploads/2013/11/BlueLinedPaperBackground.jpg);
   background-size: cover;
 }
  .contain1{
-   border: 3px groove rgba(0,0,0,0.2);
+   border: 3px dotted rgba(0,0,0,0.2);
    background-image: url(http://cdn.designbeep.com/wp-content/uploads/2013/04/2.lined-paper-texture.jpg);
    background-size: cover;
    padding: 20px;
@@ -37,18 +37,34 @@ body, .forms1 {
 
 }
 .postTitle{
+  font-family: 'Cabin Sketch', cursive;
+  font-size: 60px;
   text-align: center;
 }
 .field {
   margin-left: 500px;
 }
 
+.usernameC {
+  font-weight: bolder;
+  text-decoration: underline;
+  text-align: left;
+}
+.timeC {
+  font-style: italic;
+  text-align: left;
+}
+
+.commentbox {
+  border: 2px dashed rgba(0,0,0,0.4)
+}
 .actions {
   margin-left: 550px;
 }
 
 .titlez {
   text-align: center;
+  font-family: 'Cabin Sketch', cursive;
   font-size: 5em;
   margin-top: 200;
 }
@@ -70,6 +86,13 @@ body, .forms1 {
   font-size: 300px;
   margin-left: 250px;
 }
+
+#aboutit {
+  font-family: 'Cabin Sketch', cursive;
+  text-align: center;
+  font-size: 45px;
+
+}
 #logopic {
   background-image: url(http://i.imgur.com/Oyw8crd.png);
   height: 300px;
@@ -78,6 +101,7 @@ body, .forms1 {
   background-position: center;
   margin-left: 190px;
   margin-top: -50px;
+
 
 
 }
