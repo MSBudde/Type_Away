@@ -1,6 +1,7 @@
 
-  <% if current_user %>
+
+<% if current_user %>
 <%= render "layouts/post_form" %>
 <% else %>
-<%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
+<%= link_to "Login", new_user_session_path, :class => "log2" %>
 <% end %>

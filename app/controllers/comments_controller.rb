@@ -10,7 +10,7 @@ class CommentsController < ApplicationController
 
   def create
     @comment = @post.comments.build(params.require(:comment).permit(:content))
-
+    @comment.user = current_user
       if(@comment.save)
         redirect_to '/posts'
       else

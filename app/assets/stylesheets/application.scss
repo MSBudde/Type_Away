@@ -17,12 +17,34 @@
 @import "bootstrap";
 
 
-.field1 {
+@import url(https://fonts.googleapis.com/css?family=Cabin+Sketch);
+@import url(http://fonts.googleapis.com/css?family=Share+Tech+Mono);
+
+body, .forms1 {
+  background-image: url(http://hilleltribe.com/wp-content/uploads/2013/11/BlueLinedPaperBackground.jpg);
+  background-size: cover;
+}
+ .contain1{
+   border: 3px groove rgba(0,0,0,0.2);
+   background-image: url(http://cdn.designbeep.com/wp-content/uploads/2013/04/2.lined-paper-texture.jpg);
+   background-size: cover;
+   padding: 20px;
+ }
+.contain2 {
+  background-image: url(http://pre03.deviantart.net/b204/th/pre/i/2014/026/1/e/crumpled_paper_by_vesperity_stock-d73wpje.jpg);
+  background-size: cover;
+  border: 1px solid rgba(0,0,0,0.2);
+
+}
+.postTitle{
+  text-align: center;
+}
+.field {
   margin-left: 500px;
 }
 
-.actions1 {
-  margin-left: 625px;
+.actions {
+  margin-left: 550px;
 }
 
 .titlez {
@@ -37,6 +59,28 @@
  margin-left: 127px;
  }
 
+#welcometag, h2 {
+  font-family: 'Cabin Sketch', cursive;
+  font-size: 150px;
+  text-align: center;
+
+}
+.log2 {
+  font-family: 'Cabin Sketch', cursive;
+  font-size: 300px;
+  margin-left: 250px;
+}
+#logopic {
+  background-image: url(http://i.imgur.com/Oyw8crd.png);
+  height: 300px;
+  width: 900px;
+  background-size:cover;
+  background-position: center;
+  margin-left: 190px;
+  margin-top: -50px;
+
+
+}
 
 .round-image-50 {
     background-color: white;
@@ -58,3 +102,107 @@
 .right {
   align-content: right;
 }
+
+.navbar-brand{
+  height: 50px;
+  width: 100px;
+  margin-top: -15px;
+  position:relative;
+  img { width: 100% }
+
+}
+
+.block-menu {
+	display: block;
+	background: #e6e6e6;
+}
+
+.block-menu li {
+	display: inline-block;
+}
+
+.block-menu li a {
+	color: black;
+	display: block;
+	text-decoration: none;
+	font-family: 'Cabin Sketch', cursive;
+	font-smoothing: antialiased;
+	text-transform: uppercase;
+	overflow: visible;
+	line-height: 20px;
+	font-size: 24px;
+	padding: 15px 10px;
+}
+
+/* animation domination */
+.three-d {
+	perspective: 200px;
+	transition: all .07s linear;
+	position: relative;
+	cursor: pointer;
+}
+	/* complete the animation! */
+	.three-d:hover .three-d-box,
+	.three-d:focus .three-d-box {
+		transform: translateZ(-25px) rotateX(90deg);
+	}
+
+.three-d-box {
+	transition: all .3s ease-out;
+	transform: translatez(-25px);
+	transform-style: preserve-3d;
+	pointer-events: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 100%;
+	height: 100%;
+  border-radius: 5px;
+
+}
+
+/*
+	put the "front" and "back" elements into place with CSS transforms,
+	specifically translation and translatez
+*/
+.front {
+	transform: rotatex(0deg) translatez(25px);
+}
+
+.back {
+	transform: rotatex(-90deg) translatez(25px);
+	color: #ffe7c4;
+}
+
+.front, .back {
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+  background-image: url(http://hilleltribe.com/wp-content/uploads/2013/11/BlueLinedPaperBackground.jpg);
+  background-size: cover;
+  padding: 15px 10px;
+	color: black;
+	pointer-events: none;
+	box-sizing: border-box;
+  border-radius: 5px;
+
+}
+
+
+// body{
+//   background: black;
+// }
+//
+// svg{
+//   width: 600px;
+//   height: 120px;
+//   display: block;
+//   position: relative;
+//   overflow: hidden;
+//   margin: 0 auto;
+//   background: black;
+// }

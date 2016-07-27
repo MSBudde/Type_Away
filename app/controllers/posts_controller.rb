@@ -7,7 +7,13 @@ class PostsController < ApplicationController
     end
 
     def myposts
+      @user = current_user
+      if current_user
       @posts = current_user.posts.order('created_at DESC')
+    else
+      redirect_to new_user_session_path
+    end
+
     end
 
     def new

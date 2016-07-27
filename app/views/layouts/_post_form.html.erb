@@ -3,12 +3,12 @@
 <%= form_for(@post) do |f| %>
   <div class="field1">
     <%= f.label :title %><br />
-    <%= f.text_field :title, autofocus: true %>
+    <%= f.text_field :title, autofocus: true, :class => 'forms1' %>
   </div>
 
   <div class="field1">
     <%= f.label :content %><br />
-    <%= f.text_area :content, :cols => 40, :rows => 10 %>
+    <%= f.text_area :content, :cols => 40, :rows => 10, :class => 'forms1' %>
   </div>
 
 

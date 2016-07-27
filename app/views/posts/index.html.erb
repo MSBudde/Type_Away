@@ -1,16 +1,17 @@
 <% @posts.each do |post| %>
   <%= link_to post_path(post.id) do %>
-    <div class="alert alert-info">
-      <p class=text-left>Title: <%= post.title %></p>
-      <p class=text-left><%= post.content %></p>
+    <div class="contain1">
+      <h1 class="postTitle"><%= post.title %></h1>
 
-      <% if current_user %>
+      </br>
+        <% if current_user %>
         <% if post.user == current_user %>
-          <p class="text-right">
-            <%= link_to "Delete this post", post_path(post), method: :delete, data: { confirm: "Are you sure?"} %>
-          </p>
+        <p class="text-right">
+          <%= link_to "Delete this post", post_path(post), method: :delete, data: { confirm: "Are you sure?"} %>
+        </p>
         <% end %>
+        <% end %>
+      </div>
+      </div>
       <% end %>
-    </div>
-  <% end %>
-<% end %>
+      <% end %>

@@ -2,17 +2,67 @@
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">TypeAway</a>
+  
+      <a class="navbar-brand">
+    <img class="pull-left" src="http://i.imgur.com/h8IIdXe.png" style="display: inline-block;">
+
+  </a>
     </div>
+    <!-- bootsrap 3d NAV bar taken from https://codepen.io/saravanakumar2701/pen/Bzoqde?editors=1100 -->
+      <ul class="nav navbar-nav navbar-left block-menu">
+        <li><a href="/" class="three-d">
+          Home
+          <span aria-hidden="true" class="three-d-box">
+          <span class="front">Home</span>
+          <span class="back">Home</span>
+          </span>
+        </a></li>
+        <li><a href="/welcome/home" class="three-d">
+          Post
+          <span aria-hidden="true" class="three-d-box">
+          <span class="front">Post</span>
+          <span class="back">Post</span>
+          </span>
+        </a></li>
+        <li><a href="/posts/myposts" class="three-d">
+          My Posts
+          <span aria-hidden="true" class="three-d-box">
+          <span class="front">My Posts</span>
+          <span class="back">My Posts</span>
+          </span>
+        </a></li>
+        <li><a href="/posts" class="three-d">
+          Explore
+          <span aria-hidden="true" class="three-d-box">
+          <span class="front">Explore</span>
+          <span class="back">Explore</span>
+          </span>
+        </a></li>
+        </ul>
+      <ul class="nav navbar-nav navbar-right">
+
+        <li >
+          <% if user_signed_in? %>
+          <li class="round-image-50"><%= image_tag(current_user.avatar.url(:thumb)) %></li>
+          <li>Logged in as <strong><%= current_user.username %></strong>.</li>
+          <li>  <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> </li>
+          <li>  <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %> </li>
+          <% else %>
+          <li>  <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> </li>
+          <li><%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %> </li>
+          <% end %>
+        </li>
+      </ul>
+    </div>
+  </div>  <!--nav-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+    </nav>
+</div>
+
 
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <!-- <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li class="active"><a href="/">Home<span class="sr-only">(current)</span></a></li>
         <li><a href="/welcome/home">Post</a></li>
@@ -22,18 +72,4 @@
         <form class="navbar-form navbar-left">
 
       </form>
-      <li align="right">
-        <% if user_signed_in? %>
-        <li class="round-image-50"><%= image_tag(current_user.avatar.url(:thumb)) %></li>
-      <li>Logged in as <strong><%= current_user.username %></strong>.</li>
-        <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> |
-        <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
-      <% else %>
-        <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> |
-        <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
-      <% end %>
-    </li>
-
-
-  </div><!-- /.container-fluid -->
-</nav>
+<!--  -->
