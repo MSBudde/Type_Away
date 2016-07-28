@@ -20,7 +20,7 @@
 @import url(https://fonts.googleapis.com/css?family=Cabin+Sketch);
 @import url(http://fonts.googleapis.com/css?family=Share+Tech+Mono);
 
-body, .forms {
+body, .forms, .forms1 {
   background-image: url(http://hilleltribe.com/wp-content/uploads/2013/11/BlueLinedPaperBackground.jpg);
   background-size: cover;
 }
@@ -216,17 +216,97 @@ body, .forms {
 
 }
 
+// till line 294 taken and modded from http://codepen.io/yoannhel/pen/sJpDj by Yoann Helen
+.content {
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 75px;
+  line-height: 100px;
+  font-family: 'Cabin Sketch', cursive;
+  color: black;
+  height: 150px;
+  overflow:hidden;
+  margin-top: -150px;
+}
 
-// body{
-//   background: black;
-// }
-//
-// svg{
-//   width: 600px;
-//   height: 120px;
-//   display: block;
-//   position: relative;
-//   overflow: hidden;
-//   margin: 0 auto;
-//   background: black;
-// }
+.visible {
+  font-weight:200;
+  overflow:hidden;
+  height:75px;
+  padding:0 40px;
+
+  .m:before {
+
+    left: 0;
+    line-height:100px;
+  }
+  .m:after {
+
+    position:absolute;
+    right: 0;
+    line-height:100px;
+  }
+  .m:after, .m:before {
+    position:absolute;
+    top:0;
+    color:#16a085;
+    font-size:42px;
+    animation:2s linear 0s normal none infinite opacity;
+  }
+}
+
+#postme {
+  font-size: 75px;
+  font-family: 'Cabin Sketch', cursive;
+  display:inline;
+  float:left;
+  margin-left:-30px;
+  margin-top: 0px;
+}
+
+.n {
+  margin-top:0;
+  padding-left:110px;
+  text-align:left;
+  list-style:none;
+  animation:6s linear 0s normal none infinite change;
+}
+
+.n, .m {
+  line-height:100px;
+  margin:0;
+}
+
+@keyframes opacity {
+  0%, 100%   {opacity:0;}
+  50%  {opacity:1;}
+}
+
+@keyframes change {
+  0%, 12%, 100%   {transform:translateY(0);}
+  17%,29%  {transform:translateY(-25%);}
+  34%,46%  {transform:translateY(-50%);}
+  51%,63%  {transform:translateY(-75%);}
+  68%,80%  {transform:translateY(-50%);}
+  85%,97%  {transform:translateY(-25%);}
+}
+
+.field1{
+  margin-top: 100px;
+  margin-left: 500px;
+}
+
+.field2 {
+
+  margin-left: 500px;
+}
+
+.buttn1 {
+  margin-left: 600px;
+  background-image: url(http://hilleltribe.com/wp-content/uploads/2013/11/BlueLinedPaperBackground.jpg);
+  background-size: cover;
+  font-family: 'Cabin Sketch', cursive;
+
+}

@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  comedy: false
+  horror: false
+  romance: false
+  post_id: 
+
+two:
+  comedy: false
+  horror: false
+  romance: false
+  post_id: 
