@@ -1,4 +1,4 @@
-
+<!-- new post animation -->
 <div class="content">
   <div class="visible">
     <h1 id="postme">
@@ -14,18 +14,18 @@
 <%= form_for(@post) do |f| %>
 <div class="field1">
     <%= f.label :title %><br />
-    <%= f.text_field :title, autofocus: true, :class => 'forms1' %>
+    <%= f.text_field :title, autofocus: true, :class => 'forms' %>
   </div>
 
 
 
-  <div class="field2">
+  <div class="field">
     <%= f.label :content %><br />
-    <%= f.text_area :content, :cols => 40, :rows => 10, :class => 'forms1' %>
+    <%= f.text_area :content, :cols => 40, :rows => 10, :class => 'forms' %>
   </div>
 
 
-  <div class="actions1">
-    <%= f.submit "Post", :class => 'buttn1' %>
+  <div class="actions">
+    <%= f.submit "Post" %>
     </div>
   <% end %>
