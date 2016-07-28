@@ -8,6 +8,8 @@ Rails.application.routes.draw do
 
   get 'posts/myposts' => 'posts#myposts'
 
+  delete 'users/sign_out' => 'devise/sessions#destroy'
+
   devise_for :users
   resources :posts do
     resources :comments
