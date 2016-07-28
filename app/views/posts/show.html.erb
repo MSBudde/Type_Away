@@ -6,24 +6,22 @@
   </div>
 </div>
 </br>
-    <div class="contain2">
-      <h2 class="postTitle">Comments</h2>
+<h2 class="postTitle">Comments</h2>
+<%= link_to "Add a comment", new_post_comment_path(@post), :class => "commentstag" %>
         <% @post.comments.each do |c| %>
+        <div class="postt yellow">
           <% if current_user %>
           <% if c.user == current_user %>
-          <div class="commentbox">
+
           <p class="usernameC">@<%= c.user.username%></p>
           <p class="timeC"><%= c.created_at %></p></br>
-          <%= c.content %>
-          <%= link_to "Delete", post_comment_path(@post, c), method: :delete, data: { confirm: "Are you sure you want to delete this?"} %>
-        </div>
-          <% end %>
-          <% end %>
-        <% end %>
-        <%= link_to "Comment", new_post_comment_path(@post) %>
+          <p class="contentC"><%= c.content %></p>
+          <%= link_to "Delete", post_comment_path(@post, c), method: :delete, data: { confirm: "Are you sure you want to delete this?"}, :class => "commentdelete" %>
 
-      </div> <br>
-      </div>
+          <% end %>
+          <% end %>
+        </div></br>
+        <% end %>
 
     <% if current_user %>
       <% if @post.user == current_user %>

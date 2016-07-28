@@ -18,7 +18,7 @@
 
 
 @import url(https://fonts.googleapis.com/css?family=Cabin+Sketch);
-@import url(http://fonts.googleapis.com/css?family=Share+Tech+Mono);
+@import url(https://fonts.googleapis.com/css?family=Coming+Soon);
 
 body, .forms, .forms1 {
   background-image: url(http://hilleltribe.com/wp-content/uploads/2013/11/BlueLinedPaperBackground.jpg);
@@ -31,8 +31,8 @@ body, .forms, .forms1 {
    padding: 20px;
  }
 .contain2 {
-  background-image: url(http://pre03.deviantart.net/b204/th/pre/i/2014/026/1/e/crumpled_paper_by_vesperity_stock-d73wpje.jpg);
-  background-size: cover;
+  background-image: url(http://i.imgur.com/HdGDLYQ.png);
+  background-size: contain;
   border: 1px solid rgba(0,0,0,0.2);
 
 }
@@ -55,9 +55,16 @@ body, .forms, .forms1 {
   text-align: left;
 }
 
-.commentbox {
-  border: 2px dashed rgba(0,0,0,0.4)
+.usernameC, .timeC, .contentC {
+  color: #000F55;
+  font-family: 'Coming Soon', cursive;
+  font-size: 20px;
 }
+.commentdelete {
+  font-size: 12px;
+  margin-left: 100px;
+}
+
 .actions {
   margin-left: 550px;
 }
@@ -92,16 +99,20 @@ body, .forms, .forms1 {
   text-align: center;
   font-size: 30px;
   margin-left: 70px;
+  font-weight: 200;
 
 }
 #logopic {
   background-image: url(http://i.imgur.com/Oyw8crd.png);
-  height: 300px;
-  width: 900px;
+  height: 450px;
+  width: 1000px;
   background-size:cover;
   background-position: center;
   margin-left: 190px;
-  margin-top: -50px;
+  margin-top: -300px;
+  position: absolute;
+  z-index: 0;
+  opacity: 10%;
 
 
 
@@ -310,4 +321,31 @@ body, .forms, .forms1 {
   background-size: cover;
   font-family: 'Cabin Sketch', cursive;
 
+}
+
+.postt {
+  color: #333;
+  position: relative;
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Satisfy;
+  font-size: 30px;
+  box-shadow: 0 10px 10px 2px rgba(0,0,0,0.3);
+
+}
+
+
+.yellow {
+background: #eae672;
+-webkit-transform: rotate(2deg);
+-moz-transform: rotate(2deg);
+-o-transform: rotate(2deg);
+-ms-transform: rotate(2deg);
+transform: rotate(2deg);
+}
+
+.commentstag {
+  font-size: 30px;
+  text-align: right;
 }
