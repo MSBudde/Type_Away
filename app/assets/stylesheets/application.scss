@@ -19,6 +19,7 @@
 
 @import url(https://fonts.googleapis.com/css?family=Cabin+Sketch);
 @import url(https://fonts.googleapis.com/css?family=Coming+Soon);
+@import url(https://fonts.googleapis.com/css?family=Patrick+Hand+SC);
 
 body, .forms, .forms1 {
   background-image: url(http://hilleltribe.com/wp-content/uploads/2013/11/BlueLinedPaperBackground.jpg);
@@ -57,7 +58,7 @@ body, .forms, .forms1 {
 
 .usernameC, .timeC, .contentC {
   color: #000F55;
-  font-family: 'Coming Soon', cursive;
+  font-family: 'Patrick Hand SC', cursive;
   font-size: 20px;
 }
 .commentdelete {
@@ -346,6 +347,11 @@ transform: rotate(2deg);
 }
 
 .commentstag {
-  font-size: 30px;
+  background-image: url(http://hilleltribe.com/wp-content/uploads/2013/11/BlueLinedPaperBackground.jpg);
+  background-size: cover;
+  font-size: 20px;
+  color: #000F55;
   text-align: right;
+  font-family: 'Patrick Hand SC', cursive;
+  border: 2px dashed
 }

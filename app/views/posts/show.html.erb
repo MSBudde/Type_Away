@@ -7,7 +7,7 @@
 </div>
 </br>
 <h2 class="postTitle">Comments</h2>
-<%= link_to "Add a comment", new_post_comment_path(@post), :class => "commentstag" %>
+<%= button_to "Add a comment", new_post_comment_path(@post), :class => "commentstag" %>
         <% @post.comments.each do |c| %>
         <div class="postt yellow">
           <% if current_user %>
