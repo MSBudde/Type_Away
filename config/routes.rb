@@ -8,7 +8,7 @@ Rails.application.routes.draw do
 
   get 'posts/myposts' => 'posts#myposts'
 
-  get 'users/sign_out' => 'devise/sessions#destroy'
+
 
   devise_for :users
   resources :posts do
@@ -16,7 +16,9 @@ Rails.application.routes.draw do
   end
 
 
-
+  devise_scope :user do
+    get '/users/sign_out' => 'sessions#destroy'
+  en
 
 
 
