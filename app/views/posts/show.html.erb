@@ -11,15 +11,16 @@
         <div class="postt yellow">
 
 
+          <% if c.user == current_user %>
 
-          <p class="usernameC">@<%= c.user.username %></p>
+          <p class="usernameC">@<%= c.user.username%></p>
           <p class="timeC"><%= c.created_at %></p></br>
           <p class="contentC"><%= c.content %></p>
 
           <% end %>
         </div></br>
-
-
+          <% end %>
+        
 
 
     <% if current_user %>
