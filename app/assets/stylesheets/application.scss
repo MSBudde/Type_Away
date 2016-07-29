@@ -20,6 +20,7 @@
 @import url(https://fonts.googleapis.com/css?family=Cabin+Sketch);
 @import url(https://fonts.googleapis.com/css?family=Coming+Soon);
 @import url(https://fonts.googleapis.com/css?family=Patrick+Hand+SC);
+@import url(https://fonts.googleapis.com/css?family=Permanent+Marker);
 
 body, .forms, .forms1 {
   background-image: url(http://hilleltribe.com/wp-content/uploads/2013/11/BlueLinedPaperBackground.jpg);
@@ -374,5 +375,21 @@ transform: rotate(2deg);
 .contentP {
   font-family: 'Patrick Hand SC', cursive;
   font-size: 28px;
+
+}
+
+#cancel {
+  font-family: 'Permanent Marker', cursive;
+  text-align: right;
+  margin-top: -45px;
+}
+
+.cancelbut {
+  font-family: 'Permanent Marker', cursive;
+  float: right;
+}
+
+.labelz {
+  font-family: 'Permanent Marker', cursive;
 
 }
