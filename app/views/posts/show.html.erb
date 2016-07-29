@@ -9,8 +9,8 @@
 <%= button_to "Add a comment", new_post_comment_path(@post),method: :get, :class => "commentstag" %>
         <div class="postt yellow">
           <% if current_user %>
-          <% if c.user == current_user %>
           <% @post.comments.each do |c| %>
+          <% if c.user == current_user %>
 
           <p class="usernameC">@<%= c.user.username%></p>
           <p class="timeC"><%= c.created_at %></p></br>
