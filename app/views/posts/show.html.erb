@@ -9,10 +9,10 @@
 <%= button_to "Add a comment", new_post_comment_path(@post),method: :get, :class => "commentstag" %>
         <% @post.comments.each do |c| %>
         <div class="postt yellow">
-        
 
 
-          <p class="usernameC">@<%= c.user.username%></p>
+
+          <p class="usernameC">@<%= c.username%></p>
           <p class="timeC"><%= c.created_at %></p></br>
           <p class="contentC"><%= c.content %></p>
 
