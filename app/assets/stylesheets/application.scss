@@ -52,6 +52,10 @@ body, .forms, .forms1 {
   margin-left: 500px;
 }
 
+.currnt {
+  font-family: 'Cabin Sketch', cursive;
+
+}
 .usernameC {
   font-weight: bolder;
   text-decoration: underline;
@@ -102,26 +106,58 @@ body, .forms, .forms1 {
 }
 
 #aboutit {
-  font-family: 'Cabin Sketch', cursive;
+  font-family: 'Patrick Hand SC', cursive;
   text-align: center;
   font-size: 30px;
   margin-left: 70px;
   font-weight: 200;
 
 }
-#logopic {
-  background-image: url(http://i.imgur.com/Oyw8crd.png);
-  height: 450px;
-  width: 1000px;
-  background-size:cover;
+#logopic1 {
+  background-image: url(http://i.imgur.com/PbAJvE3.png);
+  height: 250px;
+  width: 400px;
+  background-size: cover;
   background-position: center;
-  margin-left: 190px;
-  margin-top: -300px;
+  margin-left: 90px;
+  margin-top: -190px;
   position: absolute;
-  z-index: 0;
-  opacity: 10%;
 
+}
 
+#logopic2 {
+  background-image: url(http://imgur.com/2atz91I.png);
+  height: 100px;
+  width: 600px;
+  background-size: cover;
+  background-position: center;
+  margin-left: 800px;
+  margin-top: -190px;
+  position: absolute;
+
+}
+
+#logopic3 {
+  background-image: url(http://imgur.com/le9oXIx.png);
+  height: 300px;
+  width: 500px;
+  background-size: cover;
+  background-position: center;
+  margin-left: 400px;
+  margin-top: -290px;
+  position: absolute;
+
+}
+
+#logopic4 {
+  background-image: url(http://imgur.com/r7T2w46.png);
+  height: 100px;
+  width: 400px;
+  background-size: cover;
+  background-position: center;
+  margin-left: 800px;
+  margin-top: -90px;
+  position: absolute;
 
 }
 
