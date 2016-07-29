@@ -7,9 +7,10 @@
 </br>
 <h2 class="postTitle">Comments</h2>
 <%= button_to "Add a comment", new_post_comment_path(@post),method: :get, :class => "commentstag" %>
+        <% @post.comments.each do |c| %>
         <div class="postt yellow">
+          <% if user_signed_in? %>
           <% if current_user %>
-          <% @post.comments.each do |c| %>
           <% if c.user == current_user %>
 
           <p class="usernameC">@<%= c.user.username%></p>
@@ -20,6 +21,8 @@
           <% end %>
         </div></br>
         <% end %>
+        <% end %>
+        
 
     <% if current_user %>
       <% if @post.user == current_user %>
