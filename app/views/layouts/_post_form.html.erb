@@ -1,20 +1,19 @@
 <!-- new post animation -->
 <div class="content">
   <div class="visible">
-    <h1 id="postme">
-      New
-    </h1>
+    <h1 id="postme">New</h1>
     <ul class="n">
-      <li class="m">Post</li>
+    <li class="m">Post</li>
      <li class="m">Ghost Story</li>
-      <li class="m">Romance</li>
+     <li class="m">Romance</li>
       <li class="m">Adventure</li>
     </div>
   </div>
+
 <%= form_for(@post) do |f| %>
 <div class="field1">
     <%= f.label :title %><br />
-    <%= f.text_field :title, autofocus: true, :class => 'forms' %>
+    <%= f.text_area :title, autofocus: true, :rows => 2, :cols => 8, :class => 'forms' %>
   </div>
 
 
