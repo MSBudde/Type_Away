@@ -13,14 +13,14 @@
   <br>
 <%= form_for(@post) do |f| %>
 <div class="field1">
-    <%= f.label :title %><br />
-    <%= f.text_area :title, autofocus: true, :rows => 2, :cols => 8, :class => 'forms' %>
+    <%= f.label :title, :class => "labelz"  %><br />
+    <%= f.text_field :title, autofocus: true, :class => 'forms' %>
   </div>
 
 
 
   <div class="field">
-    <%= f.label :content %><br />
+    <%= f.label :content, :class => "labelz"  %><br />
     <%= f.text_area :content, :cols => 40, :rows => 10, :class => 'forms' %>
   </div>
 
