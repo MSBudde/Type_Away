@@ -9,20 +9,18 @@
 <%= button_to "Add a comment", new_post_comment_path(@post),method: :get, :class => "commentstag" %>
         <% @post.comments.each do |c| %>
         <div class="postt yellow">
-          <% if user_signed_in? %>
-          <% if current_user %>
-          <% if c.user == current_user %>
+        
+
 
           <p class="usernameC">@<%= c.user.username%></p>
           <p class="timeC"><%= c.created_at %></p></br>
           <p class="contentC"><%= c.content %></p>
 
           <% end %>
-          <% end %>
         </div></br>
-        <% end %>
-        <% end %>
-        
+          <% end %>
+
+
 
     <% if current_user %>
       <% if @post.user == current_user %>
