@@ -26,8 +26,8 @@ body, .forms, .forms1 {
   background-size: cover;
 }
  .contain1{
-   border: 3px dotted rgba(0,0,0,0.2);
-   background-image: url(http://cdn.designbeep.com/wp-content/uploads/2013/04/2.lined-paper-texture.jpg);
+   border: 3px outset rgba(0,0,0,0.3);
+   background-image: url(http://pre07.deviantart.net/e54e/th/pre/i/2011/006/d/b/wrinkled_paper_texture__by_christianluannstock-d36jws6.png);
    background-size: cover;
    padding: 20px;
  }
@@ -36,6 +36,11 @@ body, .forms, .forms1 {
   background-size: contain;
   border: 1px solid rgba(0,0,0,0.2);
 
+}
+.contain3 {
+  background-image: url(http://pre07.deviantart.net/e54e/th/pre/i/2011/006/d/b/wrinkled_paper_texture__by_christianluannstock-d36jws6.png);
+  background-size: cover;
+  border: 1px outset rgba(0,0,0,0.3);
 }
 .postTitle{
   font-family: 'Cabin Sketch', cursive;
@@ -347,11 +352,27 @@ transform: rotate(2deg);
 }
 
 .commentstag {
-  background-image: url(http://hilleltribe.com/wp-content/uploads/2013/11/BlueLinedPaperBackground.jpg);
-  background-size: cover;
-  font-size: 20px;
+  background: #eae672;
+  font-size: 45px;
+  color: #000F55;
+  transform:rotate(-25deg);
+  text-align: right;
+  font-family: 'Patrick Hand SC', cursive;
+  border: 2px dashed;
+  box-shadow: 0 10px 10px 2px rgba(0,0,0,0.3);
+}
+
+.commentnote {
+  background: #eae672;
+  font-size: 25px;
   color: #000F55;
   text-align: right;
   font-family: 'Patrick Hand SC', cursive;
-  border: 2px dashed
+  border: 2px dashed;
+}
+
+.contentP {
+  font-family: 'Patrick Hand SC', cursive;
+  font-size: 28px;
+
 }
